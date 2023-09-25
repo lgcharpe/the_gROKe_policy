@@ -1,8 +1,8 @@
 import pandas as pd
 
-file_SolarIrradiance = "SolarIrradiance.csv"
-file_WindSpeed = "WindSpeed.csv"
-file_rateConsumptionCharge = "rate_consumption_charge.csv"
+file_SolarIrradiance = "./data/SolarIrradiance.csv"
+file_WindSpeed = "./data/WindSpeed.csv"
+file_rateConsumptionCharge = "./data/rate_consumption_charge.csv"
 
 data_solar = pd.read_csv(file_SolarIrradiance)
 solarirradiance = np.array(data_solar.iloc[:, 3])
