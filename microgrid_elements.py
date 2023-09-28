@@ -43,7 +43,7 @@ wind_turbine = RenewableModule(
 
 print(wind_turbine)
 
-buy_price = pd.read_csv("data/rate_consumption_charge.csv")["Grid Elecricity Price锛?/kWh锛?"].values * 10000
+buy_price = pd.read_csv("data/rate_consumption_charge.csv")["Grid Elecricity Price（$/kWh）"].values * 10000
 sell_price = np.ones(len(buy_price)) * 0.2 * 10000
 co2 = np.zeros(len(buy_price))
 
